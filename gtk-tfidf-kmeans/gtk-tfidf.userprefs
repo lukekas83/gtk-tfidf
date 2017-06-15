@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="gtk-tfidf/wMain.cs" ctype="Workbench">
+    <Files>
+      <File FileName="gtk-tfidf/wMain.cs" Line="89" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+  <AuthorInfo Name="kacper" Email="l.kasprzyk@gmail.com" Copyright="luki kacper" ctype="AuthorInformation" />
+</Properties>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13094487-E5F2-45DF-98CE-E7A8BAA42290}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Linux Binaries">
+          <Builder targetFile="gtk-tfidf-linux.tar.gz" platform="Linux" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="gtk-tfidf\gtk-tfidf.csproj" />
+              <SolutionItemReference path="libEziTfidf\libEziTfidf.csproj" />
+            </ChildEntries>
+            <RootEntry path="gtk-tfidf.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Microsoft Windows Binaries">
+          <Builder targetFile="gtk-tfidf-windows.tar.gz" platform="Windows" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="gtk-tfidf\gtk-tfidf.csproj" />
+              <SolutionItemReference path="libEziTfidf\libEziTfidf.csproj" />
+            </ChildEntries>
+            <RootEntry path="gtk-tfidf.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="Tarball">
+          <Builder TargetDirectory="gtk-tfidf" DefaultConfiguration="Debug|x86" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="gtk-tfidf\gtk-tfidf.csproj" />
+              <SolutionItemReference path="libEziTfidf\libEziTfidf.csproj" />
+            </ChildEntries>
+            <RootEntry path="gtk-tfidf.sln" id=":root:" />
+          </Builder>
+        </Package>
+        <Package name="MSBuild (Visual Studio 2005) Sources">
+          <Builder targetFile="gtk-tfidf.tar.gz" format="MonoDevelop.Projects.FileFormat" ctype="SourcesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="gtk-tfidf\gtk-tfidf.csproj" />
+              <SolutionItemReference path="Packages.mdproj" />
+              <SolutionItemReference path="libEziTfidf\libEziTfidf.csproj" />
+            </ChildEntries>
+            <RootEntry path="gtk-tfidf.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
